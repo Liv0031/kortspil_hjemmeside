@@ -3,109 +3,117 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Forside</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon (1).ico">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="findkortspil.html">Find Kortspil</a></li>
-                <li><a href="deadlink.html">Quiz</a></li>
-                <li><a href="deadlink.html">Om os</a>
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-item-active">Forside</a></li>
+                <li><a href="findkortspil.html" class="nav-item">Find Kortspil</a></li>
+                <li><a href="#" class="nav-item">Quiz</a></li>
+                <li><a href="#" class="nav-item">Om os</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="section.grid_1-1">
-            <div class=".hero_content">
+        <section class="heroindex">
+            <div class="hero_content">
                 <div>
-                    <h1>Kortspil</h1>
+                    <h1>KORTSPIL</h1>
                 </div>
                 <div>
                     <p>
                         Velkommen til din guide til klassiske og moderne kortspil med franske spillekort. Udforsk
                         regler, strategier og find dit
-                        næste yndlingsspil til dig eller selskabet.
+                        næste yndlingsspil til dig eller&nbsp;selskabet.
                     </p>
                 </div>
                 <div>
-                    <button>
-                        FIND KORTSPIL HER →
-                    </button>
+                    <a href="findkortspil.html" class="hero-button">FIND KORTSPIL HER →</a>
                 </div>
-
-                <img src="/img/forside.jpg" alt="Forside">
-
             </div>
         </section>
-        <section class="section-grid_1">
+        <div>
+            <h2 class="popularcardsh2">Populære Kortspil</h2>
+            </h2>
+        </div>
+        <div class="kortspil-container">
             <div>
-                <h2>Populære Kortspil</h2>
-                </h2>
-            </div>
-            <div class="div.grid_1">
-                <div>
-                    <article class="article.card">
-                        <div>
-                            <img src="/img/500.jpg" alt="femhundrede">
-                        </div>
-                        <div>
-                            <h2>500</h2>
-                        </div>
-                        <div>
-                            <p>Et klassisk kortspil, hvor strategi og held går hånd i hånd. Gennem spillet gælder det om
-                                at læse sine modspillere,
-                                planlægge sine stik og må 500 point før de andre. Men pas på - satser man for højt, kan
-                                det hurtigt koste dyrt!
-                            </p>
-                        </div>
-                        <div><button>Se regler →</button></div>
-                    </article>
-                    <article class="article.card">
-                        <div>
-                            <img src="/img/røvhul.jpg" alt="Røvhul">
-                        </div>
-                        <div>
-                            <h2>Røvhul</h2>
-                        </div>
-                        <div>
-                            <p>Et klassisk og underholdende kortspil, der er perfekt til en hyggelig aften med venner og
-                                familie. Spillet kombinerer
-                                held, strategi og taktik, hvor det gælder om at slippe af med sine kort før de andre.
-                            </p>
-                        </div>
-                        <div>
-                            <button>Se regler →</button>
-                        </div>
-                    </article>
-                    <article class="article.card">
-                        <div><img src="/img/davoserjas.jpg" alt="davoserjas"></div>
-                        <div>
-                            <div>
-                                <h2>Davoserjas</h2>
-                            </div>
-                            <p>Et klassisk og underholdende kortspil, hvor held, strategi og taktik går hånd i hånd.
-                                Spillet byder på masser af
-                                spænding, når det gælder om at slippe af med sine kort og komme først i mål. Et
-                                hyggeligt spil, hvor hver runde byder på
-                                nye overraskelser.</p>
-                        </div>
-                        <div><button>Se regler →</button></div>
-                    </article>
+                <article class="card">
                     <div>
-                        <button>Tag Quiz →</button>
+                        <img class="card-image" src="img/500.webp" alt="femhundrede">
                     </div>
+                    <div>
+                        <h2 class="femhundredeoverskrift">500</h2>
+                    </div>
+                    <div>
+                        <p class="femhundredep">Et klassisk kortspil. Gennem
+                            spillet gælder det om
+                            at læse sine modspillere,
+                            planlægge sine stik og nå 500 point før de andre. Men pas på - satser man for højt, kan
+                            det hurtigt koste dyrt!
+                        </p>
+                    </div>
+                    <div><a href="femhundrede.html" class="card-button">Se regler →</a></div>
+                </article>
+                <article class="card">
+                    <div>
+                        <img class="card-image" src="/img/røvhul.webp" alt="Røvhul">
+                    </div>
+                    <div>
+                        <h2 class="femhundredeoverskrift">Røvhul</h2>
+                    </div>
+                    <div>
+                        <p class="femhundredep">Et klassisk og underholdende kortspil, der er perfekt til en hyggelig
+                            aften med venner og
+                            familie. Spillet kombinerer
+                            held, strategi og taktik, hvor det gælder om at slippe af med sine kort før de andre.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="card-button">Se regler →</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div><img class="card-image" src="img/davoserjas.webp" alt="davoserjas"></div>
+                    <div>
+                        <div>
+                            <h2 class="femhundredeoverskrift">Davoserjas</h2>
+                        </div>
+                        <p class="femhundredep">Et underholdende kortspil. Spillet byder på masser af
+                            spænding, når det gælder om at slippe af med sine kort og komme først i mål. Et
+                            hyggeligt spil, hvor hver runde byder på&nbsp;overraskelser.</p>
+                    </div>
+                    <div>
+                        <a href="#" class="card-button">Se regler →</a>
+                    </div>
+                </article>
+                <div>
+                    <a href="#" class="tagquiz">Tag Quiz</a>
                 </div>
             </div>
+        </div>
 
     </main>
-    <footer>@2026 Kortspil - Livia Reimer</footer>
+    <footer class="footer">@2026 Kortspil - Livia Reimer</footer>
 
 
 

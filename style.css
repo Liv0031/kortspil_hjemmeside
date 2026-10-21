@@ -10,3 +10,835 @@ img {
   height: auto;
   display: block;
 }
+
+/*******fonts*****/
+
+/*Til h2*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Til P*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url(./fonts/bodonixt-webfont.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Bodoni Moda", serif;
+  color: #f4e8d0;
+  font-size: 35px;
+}
+
+/***********Body***********/
+body {
+  background-color: #19201f;
+  margin: 0;
+  padding: 0;
+  border: 4px solid #f4e8d0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/***************P TEKST**********************/
+
+p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 200;
+}
+/*MENU */
+
+.navbar {
+  background-color: #19201f;
+  border: 3px solid #f4e8d0;
+  border-radius: 0%;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.nav-item {
+  color: #f4e8d0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  padding: 10px 8px;
+}
+
+.nav-item-active {
+  background-color: #f4e8d0;
+  color: #19201f;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+  border-radius: 5px;
+
+  padding: 10px 15px;
+  display: block;
+}
+
+/* HERO - STYLE*/
+
+.heroindex {
+  background-color: #19201f;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  overflow: hidden;
+  border-bottom: 3px solid #f4e8d0;
+}
+
+/* BAGGRUNDSBILLEDET*/
+
+.heroindex::before {
+  content: "";
+  position: absolute;
+
+  inset: 0;
+
+  background-image: url("img/forside.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  opacity: 0.45;
+
+  z-index: 0;
+}
+
+/* OVERSKRIFT */
+
+.hero_content {
+  position: relative;
+  z-index: 1;
+
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero_content h1 {
+  color: #f4e8d0;
+
+  font-family: "Bodoni";
+  font-size: 70px;
+  font-weight: 400;
+
+  text-align: center;
+
+  width: 100%;
+  margin: 0;
+}
+
+/* TEKST */
+
+.hero_content p {
+  color: white;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+/* KNAP */
+
+.hero-button {
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  background-color: #f4e8d0;
+  color: #19201f;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+  border: none;
+
+  margin-top: 20px;
+}
+
+/**POPULARCARDS**/
+.popularcardsh2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #151515;
+  border: 2px solid #8a6a3d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin-left: 10px;
+}
+
+.card p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card a {
+  font-size: 22px;
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+  border: 1px solid #8a6a3d;
+}
+
+.femhundredeoverskrift {
+  color: #f4e8d0;
+  margin: 0 0 5px;
+}
+
+.femhundredep {
+  color: white;
+  line-height: 1.5;
+}
+
+.card-button {
+  display: block;
+  background-color: #f4e8d0;
+  color: #222;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.tagquiz {
+  display: block;
+  background-color: #f4e8d0;
+  color: #222;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 28px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin: 15px 10px;
+  text-decoration: none;
+}
+
+/***************Find Kortspil****************/
+
+.punktformercategory {
+  padding: 30px;
+}
+:root {
+  --bg: #0b0f14;
+  --cream: #f4e8d0;
+  --gold: #c9a56a;
+  --white: #ffffff;
+}
+
+/*HERO*/
+
+.hero-findkortspil {
+  margin: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+}
+.findkortspilh1 {
+  font-family: "Bodoni", serif;
+  color: var(--cream);
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 0 0 0.75rem;
+}
+
+.tilbage {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--white);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.hero_content2 p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.findkortimg {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 40%;
+}
+
+/***Kortspil til enhver anledning***/
+.punkter {
+  margin: 0.75rem;
+  padding: 1.5rem 1rem 0.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+}
+
+.punkter h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin: 0 0 1.5rem;
+  font-family: "Bodoni Moda", serif;
+}
+
+.punkterh3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--cream);
+  margin: 0 0 0.75rem;
+}
+
+.punktformercategory {
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: var(--cream);
+  list-style: disc;
+}
+.punktformercategory a {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.category {
+  border-top: 1px solid var(--gold);
+  padding: 1rem 0;
+}
+
+/***Lær et nyt kortspil***/
+.steps {
+  margin: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--cream);
+  background: #5c1414;
+  border-radius: 12px;
+}
+.steps h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+.steps > p {
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 0.25rem;
+  text-align: left;
+  border: 1px solid #8a3a3a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.number {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  text-align: left;
+  margin: 0;
+}
+
+.steph3 {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  text-align: left;
+  font-size: 1rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+
+.stepp {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  text-align: left;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/***Vælg efter sværhedsgrad***/
+.levelcard {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--cream);
+}
+
+.levelcardh2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+  font-family: "Bodoni Moda", serif;
+}
+.levelcard > p {
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem;
+}
+
+.difficulty-card1,
+.difficulty-card2,
+.difficulty-card3 {
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.difficulty-card1 {
+  background: #1f4d3a;
+}
+.difficulty-card2 {
+  background: #4a3118;
+}
+
+.difficulty-card3 {
+  background: #4a1218;
+}
+
+.difficulty-card1 img,
+.difficulty-card2 img,
+.difficulty-card3 img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 0.5rem 0 1rem;
+}
+.difficulty-card1 h3,
+.difficulty-card2 h3,
+.difficulty-card3 h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.difficulty-card1 a,
+.difficulty-card2 a,
+.difficulty-card3 a {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.7rem 0;
+  background: var(--cream);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/*Sværhedsprikker*/
+.difficulty-level1,
+.difficulty-level2,
+.difficulty-level3 {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.difficulty-level1 span,
+.difficulty-level2 span,
+.difficulty-level3 span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--cream);
+}
+
+.difficulty-level1 span:nth-child(-n + 1) {
+  background: #4caf6a;
+  border-color: #4caf6a;
+}
+.difficulty-level2 span:nth-child(-n + 2) {
+  background: #e6b422;
+  border-color: #e6b422;
+}
+.difficulty-level3 span:nth-child(-n + 3) {
+  background: #d63a3a;
+  border-color: #d63a3a;
+}
+
+/********************500********************/
+
+/***IMG***/
+.gameintro {
+  margin: 0.5rem 0.75rem;
+  padding: 1rem 1rem 1.5rem;
+  text-align: center;
+  color: var(--cream);
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  background:
+    linear-gradient(rgba(11, 15, 20, 0.8), rgba(11, 15, 20, 0.8)),
+    url("../img/femhundrede.webp") center / cover no-repeat;
+}
+
+.gameintro h1 {
+  color: white;
+  font-size: 6.5rem;
+  line-height: 1;
+  margin: 0 0 1rem;
+}
+
+.gameintro p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  text-wrap: balance;
+}
+
+/**INFO BOKS**/
+.gameintro {
+  margin: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: 3px double var(--cream);
+  color: var(--cream);
+  text-align: center;
+}
+.info-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #55595e;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item h2 {
+  color: white;
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+  text-align: center;
+}
+
+.info-item p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/*Sværhedsprikker*/
+.difficulty-level2-femhundrede {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0.6rem 0;
+}
+
+.difficulty-level2-femhundrede span {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 1px solid var(--cream);
+}
+
+.difficulty-level2-femhundrede span:nth-child(-n + 2) {
+  background: #e6b422;
+  border-color: #e6b422;
+}
+
+/*KORT OM SPILLET*/
+.about-game {
+  margin: 0.75rem;
+  padding: 1.25rem 1rem;
+  background: #3a1216;
+  border: 3px double var(--cream);
+  color: var(--cream);
+  text-align: center;
+}
+
+.about-game h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+  margin: 0 0 1rem;
+}
+
+.about-game p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/*SÅDAN SPILLES 500*/
+.howto {
+  margin: 0.75rem;
+  padding: 1rem;
+  border: 3px double var(--cream);
+  color: var(--cream);
+  text-align: center;
+}
+
+.howto h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+  margin: 0 0 0.75rem;
+}
+
+.howto p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.howto img {
+  display: block;
+  width: 70%;
+  max-width: 260px;
+  margin: 1rem auto 0;
+  border-radius: 10px;
+}
+
+/***Regler***/
+
+.rules {
+  position: relative;
+  margin: 0.75rem;
+  padding: 1rem 1rem 1.75rem;
+  border: 3px double var(--cream);
+  color: var(--cream);
+}
+
+.rules h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.rules > p {
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.rules ol {
+  max-height: 280px;
+  /*Højde på scroll*/
+  overflow-y: auto;
+  margin: 0;
+  padding: 0 0.75rem 0 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.rules li {
+  margin-bottom: 1rem;
+  padding-left: 0.25rem;
+}
+
+.rules::after {
+  content: "SCROLL";
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.4rem;
+  font-size: 0.55rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  color: white;
+}
+
+.rules ol {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cream) transparent;
+}
+
+/*KORTENES VÆRDI*/
+.card-values {
+  margin: 0.75rem;
+  padding: 1rem;
+  border: 3px double var(--cream);
+  color: var(--cream);
+  text-align: center;
+}
+
+.card-values h2 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.value-item {
+  margin-bottom: 1.25rem;
+}
+
+.value-item:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.value-item img {
+  display: block;
+  margin: 0 auto 0.4rem;
+  height: 110px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.cards500 {
+  display: flex;
+  justify-content: center;
+}
+
+.value-item h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.value-item p {
+  font-size: 0.75rem;
+  margin: 0.1rem 0 0;
+}
+
+/*POINT OG VINDER*/
+.points-winner {
+  margin: 0.75rem;
+  padding: 1rem 1rem 0;
+  border: 3px double var(--cream);
+  color: var(--cream);
+  text-align: center;
+  overflow: hidden;
+}
+
+.points-winner h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.points-winner > p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+.winner-image {
+  margin: 0 -1rem;
+}
+.winner-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/***Gode tips***/
+.tips h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+}
+.tips {
+  margin: 0.75rem;
+  padding: 1rem;
+  border: 3px double var(--cream);
+  color: var(--cream);
+  text-align: center;
+}
+
+.tips h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+  font-weight: lighter;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tips > p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+}
+
+.tip {
+  margin-bottom: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #0d392b;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.tip p {
+  margin: 0;
+}
+
+.tilbage,
+main > a {
+  display: inline-block;
+  margin: 0.75rem 0.75rem 0;
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  color: white;
+  padding: 1rem;
+  font-size: 0.7rem;
+  color: var(--cream);
+}

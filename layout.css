@@ -1,0 +1,595 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 1024px) {
+  /*navigation*/
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 8%;
+  }
+  /*HERO*/
+  .heroindex {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero_content {
+    max-width: 40%;
+    padding: 0 8%;
+  }
+
+  .heroindex h1  {
+    margin: 0 0 1rem;
+  }
+
+  .heroindex p {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .hero-button {
+    display: inline-block;
+  }
+
+  /*populære kortspil*/
+  .popularcardsh2 {
+    margin: 3rem 0 2rem;
+  }
+
+  .kortspil-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem 3rem;
+  }
+  .kortspil-container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  /*tagquiz*/
+  .kortspil-container > div > div:last-child {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+  }
+
+  .card {
+    display: flex;
+  }
+  .card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .femhundredeoverskrift {
+    margin: 1rem 0 0.5rem;
+    margin-bottom: -0rem;
+  }
+
+  /*knappen skubbes til bunden*/
+  .card > div:last-child {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+
+  .card-button {
+    display: block;
+  }
+
+  .tagquiz {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .card > div {
+    width: 100% !important;
+  }
+  .card-image {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .kortspil-container .card {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .kortspil-container .card-image {
+    border: 1px solid #8a6a3d;
+    border-radius: 4px;
+  }
+  .kortspil-container .femhundredep {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+  .kortspil-container .card > div:last-child {
+    padding: 0;
+  }
+  .kortspil-container .card-button {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.6rem 0;
+    border-radius: 4px;
+  }
+
+  .kortspil-container > div > div:last-child {
+    grid-column: 1 / -1 !important;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+
+  .kortspil-container .tagquiz {
+    display: inline-block;
+    padding: 1.2rem 4rem;
+    border-radius: 4px;
+    font-size: 1.6rem;
+  }
+
+  .heroindex .hero_content {
+    max-width: 38%;
+    margin: 0 !important;
+    padding: 0 0 0 8%;
+    text-align: left !important;
+  }
+
+  .heroindex h1 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroindex p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    text-wrap: balance;
+  }
+
+  .heroindex .hero-button {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+  .navbar .nav-item,
+  .navbar .nav-item-active {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .heroindex {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  main {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/***FIND KORTSPIL - DESKTOP***/
+@media (min-width: 1024px) {
+  /**BILLEDE SOM MØRK BAGGRUND***/
+  .hero-findkortspil {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 260px;
+    margin: 0.75rem;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .hero-findkortspil .hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero-findkortspil .hero-image div {
+    height: 100%;
+  }
+  .hero-findkortspil .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    opacity: 0.35;
+  }
+
+  .hero-findkortspil .hero_content2 {
+    position: static;
+    z-index: 1;
+    max-width: 55%;
+    padding: 1.5rem 3rem;
+  }
+
+  .hero-findkortspil .hero_content2 > div:first-child {
+    position: relative;
+    z-index: 1;
+    position: static;
+  }
+
+  .hero-findkortspil .tilbage {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    z-index: 2;
+    font-size: 1.1rem;
+  }
+
+  .hero_content2 h1 {
+    text-align: left;
+    font-size: 3.5rem;
+  }
+
+  .hero_content2 p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  /*Kortspil til enhver anledning: 4 kolonner****/
+  .punkter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem 1rem;
+  }
+  .punkter h2 {
+    grid-column: 1 / -1;
+    text-align: left;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .category {
+    border-top: none;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .category + .category {
+    border-left: 1px solid var(--gold);
+  }
+  .category h3 {
+    text-align: left;
+  }
+
+  /**LÆR ET NYT KORTSPIL**/
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem 1.5rem 2rem;
+    column-gap: 1.5rem;
+    row-gap: 0;
+  }
+  .steps h2,
+  .steps > p {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+  .steps > p {
+    margin-bottom: 0.5rem;
+  }
+  .step {
+    margin-bottom: 0;
+  }
+
+  /**VÆLG EFTER SVÆRHEDSGRAD**/
+  .levelcard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem 1rem;
+    column-gap: 1.5rem;
+    row-gap: 0;
+  }
+
+  .levelcard h2,
+  .levelcard > p {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+
+  /*Overskriften på en linje som i figma*/
+  .levelcard h2 br {
+    display: none;
+  }
+
+  .difficulty-card1,
+  .difficulty-card2,
+  .difficulty-card3 {
+    margin-bottom: 0;
+  }
+
+  .difficulty-card1 img,
+  .difficulty-card2 img,
+  .difficulty-card3 img {
+    height: 170px;
+  }
+
+  .punkter,
+  .steps,
+  .levelcard {
+    max-width: none;
+    width: auto;
+    margin: 1.5rem 0.75rem;
+  }
+
+  .punkter {
+    padding: 1.5rem 2rem;
+  }
+
+  .steps {
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  .levelcard {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* ---------- HOVEDGRID ---------- */
+  main.side-500 {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    grid-template-areas:
+      "back   back"
+      "intro  intro"
+      "info   info"
+      "about  about"
+      "howto  rules"
+      "values rules"
+      "winner tips";
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+
+  .side-500 .tilbage {
+    grid-area: back;
+    margin: 0;
+  }
+  .gameintro {
+    grid-area: intro;
+  }
+  .gameinfo {
+    grid-area: info;
+  }
+  .about-game {
+    grid-area: about;
+  }
+  .howto {
+    grid-area: howto;
+  }
+  .card-values {
+    grid-area: values;
+  }
+  .rules {
+    grid-area: rules;
+  }
+  .points-winner {
+    grid-area: winner;
+  }
+  .tips {
+    grid-area: tips;
+  }
+
+  .gameintro,
+  .gameinfo,
+  .about-game,
+  .howto,
+  .card-values,
+  .rules,
+  .points-winner,
+  .tips {
+    margin: 0;
+  }
+
+  .gameintro {
+    text-align: left;
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  .gameintro h1 {
+    font-size: 7rem;
+  }
+
+  .gameintro p {
+    max-width: 480px;
+    text-wrap: pretty;
+  }
+
+  /* ---------- INFO ---------- */
+  .gameinfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 0;
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .info-item + .info-item {
+    border-left: 1px solid #55595e;
+  }
+
+  .difficulty-level2-femhundrede span {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  /* ---------- KORT OM SPILLET: tekst til venstre ---------- */
+  .about-game {
+    text-align: left;
+    padding: 1rem 1.5rem 1.25rem;
+  }
+
+  .about-game h2 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-game p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  /* ---------- SÅDAN SPILLES (venstre kolonne) ---------- */
+  .howto {
+    text-align: left;
+  }
+
+  .howto h2 {
+    font-size: 1.5rem;
+  }
+
+  .howto p {
+    font-size: 0.8rem;
+  }
+
+  .howto img {
+    width: 55%;
+    max-width: 300px;
+  }
+
+  /* ---------- KORTENES VÆRDI: 4 i en række ---------- */
+  .card-values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    align-items: end;
+  }
+
+  .card-values h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+  }
+
+  .value-item,
+  .value-item:last-child {
+    margin: 0;
+  }
+
+  .value-item img {
+    height: 80px;
+  }
+
+  /* ---------- REGLER: høj scroll-boks i højre kolonne ---------- */
+  .rules {
+    text-align: left;
+    padding: 1.25rem 1.5rem 1.75rem;
+    overflow: hidden;
+  }
+
+  .rules h2 {
+    font-size: 2.4rem;
+  }
+
+  .rules ol {
+    max-height: 640px;
+    font-size: 0.85rem;
+  }
+
+  /* ---------- POINT OG VINDER ---------- */
+  .points-winner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 340px;
+    text-align: left;
+    padding: 1rem 0 0 1.5rem;
+    overflow: hidden;
+  }
+
+  .points-winner h2 {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2.2rem;
+    margin: 0 0 2rem;
+    text-align: left;
+  }
+
+  .points-winner > p {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    max-width: 340px;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    text-align: left;
+    text-wrap: pretty;
+  }
+
+  .winner-image {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    margin: 5rem 0 0;
+  }
+
+  /* ---------- GODE TIPS ---------- */
+  .tips h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 0 1rem;
+  }
+  .tip {
+    border: 1px solid #3a3f45;
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .side-500 .tilbage {
+    grid-area: back;
+    margin: 1.25rem 0 0.25rem 1rem;
+  }
+}
